@@ -1,6 +1,6 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import { Login } from './pages/admin/login'
-// import { Dashboard } from './pages/admin/Dashboard'
+import { AdDashboard } from './pages/admin/Dashboard'
 import { Course } from './pages/admin/Course'
 import { Applications } from './pages/admin/Applications'
 import { Clients } from './pages/admin/Clients'
@@ -15,7 +15,7 @@ export const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/admin' element={<Login />} />
-                {/* <Route path='/admin/dashboard' element={<Dashboard />} /> */}
+                <Route path='/admin/dashboard' element={<AdDashboard />} />
                 <Route path='/admin/course' element={<Course />}/>
                 <Route path='/admin/applications' element={<Applications />} />
                 <Route path='/admin/clients' element={<Clients />} />
